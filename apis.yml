@@ -1,7 +1,22 @@
 aid: colorful
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/colorful.png
 name: Colorful
 description: Colorful is a company surfaced as a portfolio company of speedinvest and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+  Evangelist network as a stub for enrichment. As of the 2026-07-18 enrichment pass the colorful.app
+  domain resolves to a parked GoDaddy for-sale lander (JS redirect to /lander, ap:"parking") with no
+  product site, developer portal, documentation, SDK, OpenAPI, or /.well-known discovery surface, so no
+  provider artifacts could be harvested; only live DNS/TLS/security probes yielded real data.
 url: https://raw.githubusercontent.com/api-evangelist/colorful/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,7 +26,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 apis: []
@@ -21,5 +36,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/colorful-domain-security.yml
 - type: Website
   url: https://colorful.app
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
